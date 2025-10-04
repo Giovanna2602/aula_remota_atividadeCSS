@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto aula remota</title>
+        <style>
+            @import url(style/style.css);
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Formulário de cadastro de aula remota</h1>
+            <p>
+                Esse sistema auxilia o professor no cadastro de <strong>aulas remotas</strong>. 
+                O professor responsável pela aula deve inserir seus dados nos campos abaixo.
+            </p>
+        </header>
+
+        <div class="div_form">
+            <form action="#" method="post">
+                <div class="separa_form j-space-around">
+                    <div class="junta_label_input">
+                        <label for="nome">Nome completo: </label>
+                        <input type="text" name="nome" placeholder="Nome do professor" required>
+                    </div>
+                    <div class="junta_label_input">
+                        <label for="email">E-mail: </label>
+                        <input type="email" name="email" placeholder="Exemplo: seu@email.com" required>
+                    </div>
+                    <div class="junta_label_input">
+                        <label for="telefone">Telefone: </label>
+                        <input type="tel" name="telefone" placeholder="(ddd)00000-0000" required>
+                    </div>    
+                </div>
+                
+                <div class="separa_form j-space-around">
+                    <div class="junta_label_input">
+                        <label for="dtnascimento">Data de nascimento: </label>
+                        <input type="date" name="dtnascimento" required>
+                    </div>
+                    
+                    <div class="junta_label_input">
+                        <label for="genero">Gênero: </label>
+                        <label><input type="radio" name="genero" value="feminino">Feminino</label>
+                        <label><input type="radio" name="genero" value="masculino">Masculino</label>
+                    </div>
+                </div>
+
+                <div class="separa_form j-space-around">
+                    <div class="junta_label_input">
+                        <label for="mensagem">Mensagem: </label>
+                        <textarea name="mensagem" rows="3" maxlength="200"></textarea>
+                    </div>
+                </div>
+
+                <div class="separa_form j-space-around">
+                    <div class="junta_label_input">
+                        <label for="faculdade">Faculdade: </label>
+                        <input type="text" id="faculdade" name="faculdade" required>
+                    </div>
+
+                    <div class="junta_label_input">
+                        <label for="disciplina">Disciplina: </label>
+                        <input type="text" name="disciplina" required>
+                    </div>
+                </div>
+
+                <div class="separa_form j-space-around">
+                    <div class="junta_label_input">
+                        <label for="dia_semana_aula">Dia de semana da aula remota: </label>
+                        <select id="dia_semana_aula">
+                            <option value="" selected disabled>Selecione o dia</option>
+                            <option value="domingo">Domingo</option>
+                            <option value="segunda">Segunda</option>
+                            <option value="terca">Terça</option>
+                            <option value="quarta">Quarta</option>
+                            <option value="quinta">Quinta</option>
+                            <option value="sexta">Sexta</option>
+                            <option value="sabado">Sábado</option>
+                        </select>
+                    </div>
+
+                    <div class="junta_label_input">
+                        <label for="dia_aula">Dia da aula remota: </label>
+                        <input type="date" name="dia_aula">
+                    </div>
+
+                    <div class="junta_label_input">
+                        <label for="conteudo">Conteúdo da aula: </label>
+                        <input type="text" name="conteudo" required>
+                    </div>
+                </div>
+
+                <div class="separa_form j-space-around">
+
+                    <div class="junta_label_input">
+                        <label for="objetivo">Objetivos da aula: </label>
+                        <textarea name="objetivo" rows="5" maxlenght="300"></textarea>
+                    </div>
+                </div>
+
+                <div id="button">
+                    <button type="submit">Enviar cadastro</button>
+                    <button type="reset">Limpar dados</button>
+                </div>
+            </form>
+        </div>
+
+        <footer>&copy; 2025 - Contato do desenvolvedor: <a href="mailto:giovanna.silva89@fatec.sp.gov.br">Giovanna</a></footer>
+    </body>
+</html>
